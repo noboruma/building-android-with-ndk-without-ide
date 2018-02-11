@@ -33,11 +33,11 @@ Source your `~/.bashrc`/`~/.zshrc`
 
 (I recommend using something like tmux to scroll and copy strings easily at that stage)
 Now, it is time to download the SDK version you want to work with:
--- First, list all the available SDK:
+1. List all the available SDK:
 ```markdown
 ${ANDROID_HOME}/tools/android list sdk --all --extended
 ```
--- Then install the SDK/tools you want, as:
+2. Then install the SDK/tools you want, as:
 ```markdown
 ${ANDROID_HOME}/tools/android update sdk --filter tools,platform-tools,build-tools-26.0.1
 ```
@@ -46,7 +46,7 @@ For the NDK, we need to grab the CMake plugin. Unfortunately, the previous andro
 Thanksfully there is a workaround for that as decribed [here](https://github.com/Commit451/android-cmake-installer). Providing you have correctly sourced your `.*rc`, you can just type the following in:
 
 ```markdown
-$ wget https://github.com/Commit451/android-cmake-installer/releases/download/1.1.0/install-cmake.sh
+wget https://github.com/Commit451/android-cmake-installer/releases/download/1.1.0/install-cmake.sh
 chmod +x install-cmake.sh
 ./install-cmake.sh
 ```
