@@ -7,17 +7,18 @@ I will cover the Linux case usage only, but this should be extensible.
 ### Installation
 First, create a place where you will install the libraries:
 ```markdown
-mkdir ~/usr
-cd ~/usr
+mkdir -p ~/usr/android-sdk
 ```
 
 You will need download both the:
 - [Android SDK](https://developer.android.com/studio/index.html) at the bottom of the page.
 ```markdown
-unzip ~/downloads/sdk-tools-windows-3859397.zip
+cd ~/usr/android-sdk
+unzip ~/downloads/sdk-tools-linux-3859397.zip
 ```
 - [Android NDK](https://developer.android.com/ndk/downloads/index.html)
 ```markdown
+cd ~/usr/
 unzip ~/downloads/android-ndk-r16b-linux-x86_64.zip
 ```
 
@@ -27,7 +28,7 @@ In your `~/.bashrc` or `~/.zshrc`, add the following environment variables:
 ```markdown
 export ANDROID_NDK_ROOT=$HOME'/usr/android-ndk-r16b'
 export ANDROID_NDK_HOME=$HOME'/usr/android-ndk-r16b'
-export ANDROID_HOME=$HOME'/usr/android-sdk/sdk'
+export ANDROID_HOME=$HOME'/usr/android-sdk'
 ```
 Source your `~/.bashrc`/`~/.zshrc`
 
